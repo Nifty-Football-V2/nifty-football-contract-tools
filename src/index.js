@@ -13,5 +13,5 @@ module.exports = {
         BuyNowMarketplaceAbi: BuyNowMarketplaceAbi,
     },
     contracts,
-    getContractForNetworkAndAddress
+    getContractForNetworkAndAddress: require('./access/lookup')
 };
