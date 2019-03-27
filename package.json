@@ -1,0 +1,19 @@
+{
+  "name": "nifty-football-contract-tools",
+  "version": "1.0.0",
+  "description": "james.morgan@blockrocket.tech",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blockrockettech/nifty-football-contract-tools.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blockrockettech/nifty-football-contract-tools/issues"
+  },
+  "homepage": "https://github.com/blockrockettech/nifty-football-contract-tools#readme"
+}
