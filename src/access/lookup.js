@@ -1,7 +1,7 @@
 const contracts = require('../access/contracts');
 
-const NiftyFootballTradingCard = require('./abi/NiftyFootballTradingCard');
-const NiftyFootballTradingCardBlindPack = require('./abi/NiftyFootballTradingCardBlindPack');
+const NiftyFootballTradingCard = require('../abi/NiftyFootballTradingCard');
+const NiftyFootballTradingCardBlindPack = require('../abi/NiftyFootballTradingCardBlindPack');
 
 module.exports = function getContractForNetworkAndAddress(network, address) {
 
