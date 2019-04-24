@@ -1,16 +1,12 @@
 const contracts = require('./access/contracts');
 
-const BuyNowMarketplaceAbi = require('./abi/BuyNowMarketplace');
-const FutballCardsAbi = require('./abi/FutballCards');
-const FutballCardsBlindPackAbi = require('./abi/FutballCardsBlindPack');
-const HeadToHeadAbi = require('./abi/HeadToHead');
+const NiftyFootballTradingCard = require('./abi/NiftyFootballTradingCard');
+const NiftyFootballTradingCardBlindPack = require('./abi/NiftyFootballTradingCardBlindPack');
 
 module.exports = {
     abi: {
-        FutballCardsAbi: FutballCardsAbi,
-        FutballCardsBlindPackAbi: FutballCardsBlindPackAbi,
-        HeadToHeadAbi: HeadToHeadAbi,
-        BuyNowMarketplaceAbi: BuyNowMarketplaceAbi,
+        NiftyFootballTradingCardAbi: NiftyFootballTradingCard,
+        NiftyFootballTradingCardBlindPackAbi: NiftyFootballTradingCardBlindPack,
     },
     contracts,
     getContractForNetworkAndAddress: require('./access/lookup')

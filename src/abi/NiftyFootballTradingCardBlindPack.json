@@ -1,48 +1,28 @@
 [
   {
     "constant": true,
+    "inputs": [],
+    "name": "creator",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0x02d05d3f"
+  },
+  {
+    "constant": true,
     "inputs": [
       {
         "name": "",
         "type": "uint256"
       }
     ],
-    "name": "games",
-    "outputs": [
-      {
-        "name": "id",
-        "type": "uint256"
-      },
-      {
-        "name": "homeTokenId",
-        "type": "uint256"
-      },
-      {
-        "name": "homeOwner",
-        "type": "address"
-      },
-      {
-        "name": "awayTokenId",
-        "type": "uint256"
-      },
-      {
-        "name": "awayOwner",
-        "type": "address"
-      },
-      {
-        "name": "state",
-        "type": "uint8"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function",
-    "signature": "0x117a5b90"
-  },
-  {
-    "constant": true,
-    "inputs": [],
-    "name": "totalGames",
+    "name": "pricePerCard",
     "outputs": [
       {
         "name": "",
@@ -52,7 +32,7 @@
     "payable": false,
     "stateMutability": "view",
     "type": "function",
-    "signature": "0x2c4e591b"
+    "signature": "0x17a5e03f"
   },
   {
     "constant": false,
@@ -87,36 +67,6 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "nft",
-    "outputs": [
-      {
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function",
-    "signature": "0x47ccca02"
-  },
-  {
-    "constant": true,
-    "inputs": [],
-    "name": "resulter",
-    "outputs": [
-      {
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function",
-    "signature": "0x4bfb2028"
-  },
-  {
-    "constant": true,
-    "inputs": [],
     "name": "paused",
     "outputs": [
       {
@@ -131,13 +81,8 @@
   },
   {
     "constant": true,
-    "inputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "name": "gamesIndex",
+    "inputs": [],
+    "name": "totalPurchasesInWei",
     "outputs": [
       {
         "name": "",
@@ -147,7 +92,22 @@
     "payable": false,
     "stateMutability": "view",
     "type": "function",
-    "signature": "0x6b5e703d"
+    "signature": "0x5f1e98c7"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "attributesBase",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0x69451b5b"
   },
   {
     "constant": false,
@@ -168,6 +128,21 @@
     "stateMutability": "nonpayable",
     "type": "function",
     "signature": "0x715018a6"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "generator",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0x7afa1eed"
   },
   {
     "constant": false,
@@ -226,13 +201,8 @@
   },
   {
     "constant": true,
-    "inputs": [
-      {
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "name": "tokenToGameMapping",
+    "inputs": [],
+    "name": "cardTypeDefault",
     "outputs": [
       {
         "name": "",
@@ -242,7 +212,7 @@
     "payable": false,
     "stateMutability": "view",
     "type": "function",
-    "signature": "0x9da1eaf8"
+    "signature": "0x96e7089d"
   },
   {
     "constant": false,
@@ -264,10 +234,10 @@
     "inputs": [
       {
         "name": "",
-        "type": "uint256"
+        "type": "address"
       }
     ],
-    "name": "openGames",
+    "name": "credits",
     "outputs": [
       {
         "name": "",
@@ -277,16 +247,20 @@
     "payable": false,
     "stateMutability": "view",
     "type": "function",
-    "signature": "0xfd22a6cf"
+    "signature": "0xfe5ff468"
   },
   {
     "inputs": [
       {
-        "name": "_resulter",
+        "name": "_wallet",
         "type": "address"
       },
       {
-        "name": "_nft",
+        "name": "_generator",
+        "type": "address"
+      },
+      {
+        "name": "_creator",
         "type": "address"
       }
     ],
@@ -299,118 +273,89 @@
     "anonymous": false,
     "inputs": [
       {
-        "indexed": true,
-        "name": "gameId",
+        "indexed": false,
+        "name": "_old",
         "type": "uint256"
       },
       {
-        "indexed": true,
-        "name": "home",
-        "type": "address"
-      },
-      {
-        "indexed": true,
-        "name": "homeTokenId",
+        "indexed": false,
+        "name": "_new",
         "type": "uint256"
       }
     ],
-    "name": "GameCreated",
+    "name": "PriceInWeiChanged",
     "type": "event",
-    "signature": "0x7dfb67e9ff596fca4da65c7eedb128cd1aac553af54b3c0cb733625a2480d8bd"
+    "signature": "0x10fff142f5fb0d7fb4619c26bd9eb8ee328ced29b159d2d36d0227399f869f35"
   },
   {
     "anonymous": false,
     "inputs": [
       {
         "indexed": true,
-        "name": "home",
-        "type": "address"
+        "name": "_tokenId",
+        "type": "uint256"
       },
       {
         "indexed": true,
-        "name": "away",
+        "name": "_to",
         "type": "address"
-      },
-      {
-        "indexed": true,
-        "name": "gameId",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
-        "name": "homeValue",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
-        "name": "awayValue",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
-        "name": "result",
-        "type": "uint256"
       }
     ],
-    "name": "GameResulted",
+    "name": "BlindPackPulled",
     "type": "event",
-    "signature": "0x6517776a77c135b8e36ba8f6999c694cf514d1bb2fe1c99c8eec2349e7dcf8a1"
+    "signature": "0x407998b30cea11382fe35115dbbb804b06d69eaf527c8f91a84041e25f42091c"
   },
   {
     "anonymous": false,
     "inputs": [
       {
         "indexed": true,
-        "name": "home",
+        "name": "_to",
         "type": "address"
-      },
-      {
-        "indexed": true,
-        "name": "away",
-        "type": "address"
-      },
-      {
-        "indexed": true,
-        "name": "gameId",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
-        "name": "homeValue",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
-        "name": "awayValue",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
-        "name": "result",
-        "type": "uint256"
       }
     ],
-    "name": "GameDraw",
+    "name": "CreditAdded",
     "type": "event",
-    "signature": "0x7638d20944c890f2b27fe51f2f231775e1850b1b28833e05980c41af6f1cc24a"
+    "signature": "0x8466168d4947c73f9fa41c3bc9a6e5efc442f28ec139dbfdbdc1ead3ab885389"
   },
   {
     "anonymous": false,
     "inputs": [
       {
-        "indexed": true,
-        "name": "gameId",
+        "indexed": false,
+        "name": "_new",
         "type": "uint256"
-      },
+      }
+    ],
+    "name": "DefaultCardTypeChanged",
+    "type": "event",
+    "signature": "0x75c6e6de0e60e7234e491208cf9d69acf42dfeecaa9e5ab98ddeabba591dd756"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
       {
-        "indexed": true,
-        "name": "closer",
+        "indexed": false,
+        "name": "_new",
+        "type": "uint256"
+      }
+    ],
+    "name": "AttributesBaseChanged",
+    "type": "event",
+    "signature": "0x89bfb412bd3e31cdc80daa077c41c4b350394ce6b1df71df0757acb58709c25b"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "_new",
         "type": "address"
       }
     ],
-    "name": "GameClosed",
+    "name": "FutballCardsGeneratorChanged",
     "type": "event",
-    "signature": "0x2ad0a22b93512c1ad0ec7824ed7945bc92e436a68404f6913fbc45d0d53e78d5"
+    "signature": "0x1621bff47ed50c9005e5edccf9340ce008500a12dc02e333c5db3890bea1ac4b"
   },
   {
     "anonymous": false,
@@ -484,177 +429,244 @@
   },
   {
     "constant": false,
-    "inputs": [
-      {
-        "name": "_tokenId",
-        "type": "uint256"
-      }
-    ],
-    "name": "createGame",
-    "outputs": [
-      {
-        "name": "_gameId",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function",
-    "signature": "0x48e837b9"
-  },
-  {
-    "constant": false,
-    "inputs": [
-      {
-        "name": "_gameId",
-        "type": "uint256"
-      },
-      {
-        "name": "_tokenId",
-        "type": "uint256"
-      }
-    ],
-    "name": "resultGame",
-    "outputs": [
-      {
-        "name": "",
-        "type": "bool"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function",
-    "signature": "0x97427ef4"
-  },
-  {
-    "constant": false,
-    "inputs": [
-      {
-        "name": "_gameId",
-        "type": "uint256"
-      }
-    ],
-    "name": "reMatch",
-    "outputs": [
-      {
-        "name": "",
-        "type": "bool"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function",
-    "signature": "0xa1d5df21"
-  },
-  {
-    "constant": false,
-    "inputs": [
-      {
-        "name": "_gameId",
-        "type": "uint256"
-      }
-    ],
-    "name": "withdrawFromGame",
-    "outputs": [
-      {
-        "name": "",
-        "type": "bool"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function",
-    "signature": "0x68f4bbd2"
-  },
-  {
-    "constant": true,
-    "inputs": [
-      {
-        "name": "_gameId",
-        "type": "uint256"
-      }
-    ],
-    "name": "getGame",
-    "outputs": [
-      {
-        "name": "homeTokenId",
-        "type": "uint256"
-      },
-      {
-        "name": "homeOwner",
-        "type": "address"
-      },
-      {
-        "name": "awayTokenId",
-        "type": "uint256"
-      },
-      {
-        "name": "awayOwner",
-        "type": "address"
-      },
-      {
-        "name": "state",
-        "type": "uint8"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function",
-    "signature": "0xa2f77bcc"
-  },
-  {
-    "constant": true,
     "inputs": [],
-    "name": "openGamesSize",
+    "name": "blindPack",
     "outputs": [
-      {
-        "name": "_size",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function",
-    "signature": "0x95affb25"
-  },
-  {
-    "constant": true,
-    "inputs": [
       {
         "name": "_tokenId",
         "type": "uint256"
       }
     ],
-    "name": "getGameForToken",
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "function",
+    "signature": "0xf1db44e8"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_to",
+        "type": "address"
+      }
+    ],
+    "name": "blindPackTo",
     "outputs": [
       {
-        "name": "gameId",
+        "name": "_tokenId",
         "type": "uint256"
-      },
+      }
+    ],
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "function",
+    "signature": "0x1184fc57"
+  },
+  {
+    "constant": false,
+    "inputs": [
       {
-        "name": "homeTokenId",
+        "name": "_numberOfCards",
         "type": "uint256"
-      },
+      }
+    ],
+    "name": "buyBatch",
+    "outputs": [
       {
-        "name": "homeOwner",
+        "name": "_tokenIds",
+        "type": "uint256[]"
+      }
+    ],
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "function",
+    "signature": "0x746d1e57"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_to",
         "type": "address"
       },
       {
-        "name": "awayTokenId",
+        "name": "_numberOfCards",
+        "type": "uint256"
+      }
+    ],
+    "name": "buyBatchTo",
+    "outputs": [
+      {
+        "name": "_tokenIds",
+        "type": "uint256[]"
+      }
+    ],
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "function",
+    "signature": "0x830b5089"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_newDefaultCardType",
+        "type": "uint256"
+      }
+    ],
+    "name": "setCardTypeDefault",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0xd91b68ce"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_newAttributesBase",
+        "type": "uint256"
+      }
+    ],
+    "name": "setAttributesBase",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0x35d16743"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_futballCardsGenerator",
+        "type": "address"
+      }
+    ],
+    "name": "setFutballCardsGenerator",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0x3c31d958"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_index",
         "type": "uint256"
       },
       {
-        "name": "awayOwner",
+        "name": "_priceInWei",
+        "type": "uint256"
+      }
+    ],
+    "name": "updatePricePerCardAtIndex",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0xff2b09bc"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_to",
+        "type": "address"
+      }
+    ],
+    "name": "addCredit",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0x7c334d0b"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_to",
         "type": "address"
       },
       {
-        "name": "state",
-        "type": "uint8"
+        "name": "_creditsToAdd",
+        "type": "uint256"
+      }
+    ],
+    "name": "addCredits",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0x871ff405"
+  },
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "withdraw",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0x3ccfd60b"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "_numberOfCards",
+        "type": "uint256"
+      }
+    ],
+    "name": "totalPrice",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
       }
     ],
     "payable": false,
     "stateMutability": "view",
     "type": "function",
-    "signature": "0x0b2ec6af"
+    "signature": "0x221f2285"
   }
 ]
