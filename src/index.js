@@ -8,7 +8,7 @@ module.exports = {
     abi: {
         NiftyFootballTradingCardAbi: NiftyFootballTradingCard,
         NiftyFootballTradingCardBlindPackAbi: NiftyFootballTradingCardBlindPack,
-        NiftyFootballTradingCardEliteBlindPack: NiftyFootballTradingCardEliteBlindPack,
+        NiftyFootballTradingCardEliteBlindPackAbi: NiftyFootballTradingCardEliteBlindPack,
     },
     contracts,
     getContractForNetworkAndAddress: require('./access/lookup')
