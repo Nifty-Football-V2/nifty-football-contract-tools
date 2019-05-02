@@ -30,46 +30,70 @@ const getNetwork = (network) => {
     });
 };
 
+const getNiftyFootballNft = (network) => {
+    return networkSplitter(network, {
+        mainnet: {
+            address: '',
+            deploymentBlock: 0
+        },
+        ropsten: {
+            address: '0x6Bb9B823200B79a2394559f00F14F44f221E2453',
+            deploymentBlock: 5519948
+        },
+        rinkeby: {
+            address: '0x9f8Da275f3B12A7f42a6F4520e7aD5b4abC7b53A',
+            deploymentBlock: 4310943
+        },
+        local: {
+            address: '',
+            deploymentBlock: 0
+        }
+    });
+};
+
 /**
  * @return {address, deploymentBlock}
  */
 const getNiftyFootballBlindPack = (network) => {
     return networkSplitter(network, {
         mainnet: {
-            address: "",
+            address: '',
             deploymentBlock: 0
         },
         ropsten: {
-            address: "0x2120599d379492452e2Ad95d8E348ed24b94F04b",
-            deploymentBlock: 5507374
+            address: '0x7672120CF3Ce7F764398b41C516Ef6481b0B28e2',
+            deploymentBlock: 5519957
         },
         rinkeby: {
-            address: "0x5412C3F20e0D7E98a3b839065958e979788DC9eA",
-            deploymentBlock: 4299871
+            address: '0x45B3a2DBB88A9E83677308b375762233679Db639',
+            deploymentBlock: 4310946
         },
         local: {
-            address: "",
+            address: '',
             deploymentBlock: 0
         }
     });
 };
 
-const getNiftyFootballNft = (network) => {
+/**
+ * @return {address, deploymentBlock}
+ */
+const getNiftyFootballEliteBlindPack = (network) => {
     return networkSplitter(network, {
         mainnet: {
-            address: "",
+            address: '',
             deploymentBlock: 0
         },
         ropsten: {
-            address: "0x55787a03dA7BD3dF55539aA7c65B357584c9Eb21",
-            deploymentBlock: 5507367
+            address: '0x1224FC85468c19B24eb77346Bb90389DfBD3935C',
+            deploymentBlock: 5519966
         },
         rinkeby: {
-            address: "0x170ED091263b8Dd08d682B423B61285411FB133f",
-            deploymentBlock: 4299867
+            address: '0x2A56C8e2c8d82386C2A9E146b9fedf22612B57a9',
+            deploymentBlock: 4310950
         },
         local: {
-            address: "",
+            address: '',
             deploymentBlock: 0
         }
     });
@@ -79,5 +103,6 @@ module.exports = {
     getNetwork,
     networkSplitter,
     getNiftyFootballBlindPack,
+    getNiftyFootballEliteBlindPack,
     getNiftyFootballNft,
 };
