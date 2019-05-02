@@ -1068,24 +1068,6 @@
     "anonymous": false,
     "inputs": [
       {
-        "indexed": true,
-        "name": "_tokenId",
-        "type": "uint256"
-      },
-      {
-        "indexed": true,
-        "name": "_to",
-        "type": "address"
-      }
-    ],
-    "name": "CardMinted",
-    "type": "event",
-    "signature": "0xdc9b1db686f25ff45fe132c07de2357339444f86d5d8bc46d57b0abd6a12aeed"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
         "indexed": false,
         "name": "_new",
         "type": "string"
