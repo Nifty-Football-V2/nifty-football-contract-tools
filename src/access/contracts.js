@@ -37,8 +37,8 @@ const getNiftyFootballNft = (network) => {
             deploymentBlock: 0
         },
         ropsten: {
-            address: '0x55787a03dA7BD3dF55539aA7c65B357584c9Eb21',
-            deploymentBlock: 5507367
+            address: '0x6Bb9B823200B79a2394559f00F14F44f221E2453',
+            deploymentBlock: 5519948
         },
         rinkeby: {
             address: '0x9f8Da275f3B12A7f42a6F4520e7aD5b4abC7b53A',
@@ -61,8 +61,8 @@ const getNiftyFootballBlindPack = (network) => {
             deploymentBlock: 0
         },
         ropsten: {
-            address: '0x2120599d379492452e2Ad95d8E348ed24b94F04b',
-            deploymentBlock: 5507374
+            address: '0x7672120CF3Ce7F764398b41C516Ef6481b0B28e2',
+            deploymentBlock: 5519957
         },
         rinkeby: {
             address: '0x45B3a2DBB88A9E83677308b375762233679Db639',
@@ -85,8 +85,8 @@ const getNiftyFootballEliteBlindPack = (network) => {
             deploymentBlock: 0
         },
         ropsten: {
-            address: '',
-            deploymentBlock: 5507374
+            address: '0x1224FC85468c19B24eb77346Bb90389DfBD3935C',
+            deploymentBlock: 5519966
         },
         rinkeby: {
             address: '0x2A56C8e2c8d82386C2A9E146b9fedf22612B57a9',
