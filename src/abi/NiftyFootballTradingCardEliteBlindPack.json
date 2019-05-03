@@ -380,24 +380,6 @@
     "anonymous": false,
     "inputs": [
       {
-        "indexed": true,
-        "name": "_tokenId",
-        "type": "uint256"
-      },
-      {
-        "indexed": true,
-        "name": "_to",
-        "type": "address"
-      }
-    ],
-    "name": "BlindPackPulled",
-    "type": "event",
-    "signature": "0x407998b30cea11382fe35115dbbb804b06d69eaf527c8f91a84041e25f42091c"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
         "indexed": false,
         "name": "_new",
         "type": "uint256"
@@ -507,12 +489,7 @@
     "constant": false,
     "inputs": [],
     "name": "blindPack",
-    "outputs": [
-      {
-        "name": "_tokenId",
-        "type": "uint256"
-      }
-    ],
+    "outputs": [],
     "payable": true,
     "stateMutability": "payable",
     "type": "function",
@@ -527,12 +504,7 @@
       }
     ],
     "name": "blindPackTo",
-    "outputs": [
-      {
-        "name": "_tokenId",
-        "type": "uint256"
-      }
-    ],
+    "outputs": [],
     "payable": true,
     "stateMutability": "payable",
     "type": "function",
@@ -547,12 +519,7 @@
       }
     ],
     "name": "buyBatch",
-    "outputs": [
-      {
-        "name": "_tokenIds",
-        "type": "uint256[]"
-      }
-    ],
+    "outputs": [],
     "payable": true,
     "stateMutability": "payable",
     "type": "function",
@@ -571,12 +538,7 @@
       }
     ],
     "name": "buyBatchTo",
-    "outputs": [
-      {
-        "name": "_tokenIds",
-        "type": "uint256[]"
-      }
-    ],
+    "outputs": [],
     "payable": true,
     "stateMutability": "payable",
     "type": "function",
