@@ -30,6 +30,27 @@ const getNetwork = (network) => {
     });
 };
 
+const getMigrations = (network) => {
+    return networkSplitter(network, {
+        mainnet: {
+            address: '',
+            deploymentBlock: 0
+        },
+        ropsten: {
+            address: '0xb0D8b4f4d1b1Cb706F44E3a23b7D37387E6Ec3B9',
+            deploymentBlock: 5526863
+        },
+        rinkeby: {
+            address: '',
+            deploymentBlock: 0
+        },
+        local: {
+            address: '',
+            deploymentBlock: 0
+        }
+    });
+};
+
 const getNiftyFootballNft = (network) => {
     return networkSplitter(network, {
         mainnet: {
@@ -102,6 +123,7 @@ const getNiftyFootballEliteBlindPack = (network) => {
 module.exports = {
     getNetwork,
     networkSplitter,
+    getMigrations,
     getNiftyFootballBlindPack,
     getNiftyFootballEliteBlindPack,
     getNiftyFootballNft,
