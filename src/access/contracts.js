@@ -37,12 +37,12 @@ const getNiftyFootballNft = (network) => {
             deploymentBlock: 0
         },
         ropsten: {
-            address: '0x0c507Ca24cDa023e94fc9B2B720B945B723D0254',
-            deploymentBlock: 5526209
+            address: '0xAC87C3a75566d4dd497b8658ca9259acD8e6937a',
+            deploymentBlock: 5526868
         },
         rinkeby: {
-            address: '0xA9f855cEFa6cB63F61c3475daE9f85f77b188327',
-            deploymentBlock: 4317280
+            address: '',
+            deploymentBlock: 0
         },
         local: {
             address: '',
@@ -61,12 +61,12 @@ const getNiftyFootballBlindPack = (network) => {
             deploymentBlock: 0
         },
         ropsten: {
-            address: '0xdc43F9BDF14CA9F79bF7f4620ffA20912C81a37B',
-            deploymentBlock: 5526216
+            address: '0xb23f0a404B2194c1F33EbF9f05FBe546F917C9Bc',
+            deploymentBlock: 5526874
         },
         rinkeby: {
-            address: '0x6cDf13ddd381818274ba02957fFffD74578D2be3',
-            deploymentBlock: 4317283
+            address: '',
+            deploymentBlock: 0
         },
         local: {
             address: '',
@@ -85,12 +85,12 @@ const getNiftyFootballEliteBlindPack = (network) => {
             deploymentBlock: 0
         },
         ropsten: {
-            address: '0x3e302bc53860Bd31Fc23FEfFa94bF2c5b989f60f',
-            deploymentBlock: 5526225
+            address: '0x1589638201c2f7399a8345926bb7aEbceAf95e54',
+            deploymentBlock: 5526883
         },
         rinkeby: {
-            address: '0xc19A05c1F77856a02AB91C80784a6175Da750F80',
-            deploymentBlock: 4317290
+            address: '',
+            deploymentBlock: 0
         },
         local: {
             address: '',
