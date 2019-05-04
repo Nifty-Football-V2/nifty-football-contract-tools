@@ -33,8 +33,8 @@ const getNetwork = (network) => {
 const getMigrations = (network) => {
     return networkSplitter(network, {
         mainnet: {
-            address: '',
-            deploymentBlock: 0
+            address: '0x98677e631aAC2a42CfFFB376CA2D1dB0793cA80f',
+            deploymentBlock: 7692815
         },
         ropsten: {
             address: '0xb0D8b4f4d1b1Cb706F44E3a23b7D37387E6Ec3B9',
@@ -54,8 +54,8 @@ const getMigrations = (network) => {
 const getNiftyFootballNft = (network) => {
     return networkSplitter(network, {
         mainnet: {
-            address: '',
-            deploymentBlock: 0
+            address: '0xbc5370374FE08d699cf7fcd2e625A93BF393cCC4',
+            deploymentBlock: 7692821
         },
         ropsten: {
             address: '0xAC87C3a75566d4dd497b8658ca9259acD8e6937a',
@@ -78,8 +78,8 @@ const getNiftyFootballNft = (network) => {
 const getNiftyFootballBlindPack = (network) => {
     return networkSplitter(network, {
         mainnet: {
-            address: '',
-            deploymentBlock: 0
+            address: '0xf6db17228226465c99fe09fe36d5e5bee438be3f',
+            deploymentBlock: 7692908
         },
         ropsten: {
             address: '0xb23f0a404B2194c1F33EbF9f05FBe546F917C9Bc',
@@ -102,8 +102,8 @@ const getNiftyFootballBlindPack = (network) => {
 const getNiftyFootballEliteBlindPack = (network) => {
     return networkSplitter(network, {
         mainnet: {
-            address: '',
-            deploymentBlock: 0
+            address: '0x30008a3685f12b498d546bca7893449fa8bfb153',
+            deploymentBlock: 7692923
         },
         ropsten: {
             address: '0x1589638201c2f7399a8345926bb7aEbceAf95e54',
