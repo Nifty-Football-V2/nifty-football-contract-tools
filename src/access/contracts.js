@@ -120,6 +120,54 @@ const getNiftyFootballEliteBlindPack = (network) => {
     });
 };
 
+/**
+ * @return {address, deploymentBlock}
+ */
+const getNiftyFootballElitePackGenerator = (network) => {
+    return networkSplitter(network, {
+        mainnet: {
+            address: '0xA23CB096b4e9440cF391818bFBAa7508d93ad219',
+            deploymentBlock: 7692920
+        },
+        ropsten: {
+            address: '0xB7D7c4A281f5FEF8562434A3bB607AEf2b822842',
+            deploymentBlock: 5526879
+        },
+        rinkeby: {
+            address: '0x831D9B2f49620409c825fd836cad726c9B5920a2',
+            deploymentBlock: 4321206
+        },
+        local: {
+            address: '',
+            deploymentBlock: 0
+        }
+    });
+};
+
+/**
+ * @return {address, deploymentBlock}
+ */
+const getNiftyFootballRegularPackGenerator = (network) => {
+    return networkSplitter(network, {
+        mainnet: {
+            address: '0xfF511f5E620D75780F200f005A306f7C7bD30EB1',
+            deploymentBlock: 7692885
+        },
+        ropsten: {
+            address: '0xe25E15aa517708c9797e2d6C77C218996E5B18D7',
+            deploymentBlock: 5526871
+        },
+        rinkeby: {
+            address: '0x62EAeEa012D83828E0354C2E66fa14a6c0312961',
+            deploymentBlock: 4321202
+        },
+        local: {
+            address: '',
+            deploymentBlock: 0
+        }
+    });
+};
+
 module.exports = {
     getNetwork,
     networkSplitter,
@@ -127,4 +175,6 @@ module.exports = {
     getNiftyFootballBlindPack,
     getNiftyFootballEliteBlindPack,
     getNiftyFootballNft,
+    getNiftyFootballRegularPackGenerator,
+    getNiftyFootballElitePackGenerator,
 };

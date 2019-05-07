@@ -1,0 +1,551 @@
+[
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "nameLength",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0x2f5d3a04"
+  },
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0x715018a6"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0x8da5cb5b"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "isOwner",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0x8f32d59b"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0xf2fde38b"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "maxAttributeScore",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0xf52cac41"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event",
+    "signature": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_sender",
+        "type": "address"
+      }
+    ],
+    "name": "generateCard",
+    "outputs": [
+      {
+        "name": "_nationality",
+        "type": "uint256"
+      },
+      {
+        "name": "_position",
+        "type": "uint256"
+      },
+      {
+        "name": "_ethnicity",
+        "type": "uint256"
+      },
+      {
+        "name": "_kit",
+        "type": "uint256"
+      },
+      {
+        "name": "_colour",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0xfaf74e07"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_sender",
+        "type": "address"
+      },
+      {
+        "name": "_base",
+        "type": "uint256"
+      }
+    ],
+    "name": "generateAttributes",
+    "outputs": [
+      {
+        "name": "strength",
+        "type": "uint256"
+      },
+      {
+        "name": "speed",
+        "type": "uint256"
+      },
+      {
+        "name": "intelligence",
+        "type": "uint256"
+      },
+      {
+        "name": "skill",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0xa56e9fd7"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_sender",
+        "type": "address"
+      }
+    ],
+    "name": "generateName",
+    "outputs": [
+      {
+        "name": "firstName",
+        "type": "uint256"
+      },
+      {
+        "name": "lastName",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0x10ba885b"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "allNationalities",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0x4f7b3b8d"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_new",
+        "type": "uint256"
+      }
+    ],
+    "name": "addNationality",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0xce0d9d5a"
+  },
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "clearNationalities",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0x85128fe4"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_index",
+        "type": "uint256"
+      }
+    ],
+    "name": "clearNationalityAtIndex",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0xa04a5fb7"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "allPositions",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0xd4f46088"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_new",
+        "type": "uint256"
+      }
+    ],
+    "name": "addPosition",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0xd2d6a872"
+  },
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "clearPositions",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0x42a02b14"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_index",
+        "type": "uint256"
+      }
+    ],
+    "name": "clearPositionAtIndex",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0x13e2b5b8"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "allKits",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0xbd1dcb22"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_new",
+        "type": "uint256"
+      }
+    ],
+    "name": "addKit",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0x9a1d0613"
+  },
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "clearKits",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0xf5e23e01"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_index",
+        "type": "uint256"
+      }
+    ],
+    "name": "clearKitAtIndex",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0x9b17d016"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "allColours",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0xaef13273"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_new",
+        "type": "uint256"
+      }
+    ],
+    "name": "addColour",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0xa5057ba5"
+  },
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "clearColours",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0xb5a40d33"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_index",
+        "type": "uint256"
+      }
+    ],
+    "name": "clearColourAtIndex",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0x9018cc66"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "allEthnicities",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0xcbade979"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_new",
+        "type": "uint256"
+      }
+    ],
+    "name": "addEthnicity",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0x477fadf0"
+  },
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "clearEthnicities",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0x191613ff"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_index",
+        "type": "uint256"
+      }
+    ],
+    "name": "clearEthnicityAtIndex",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0xb0efcc58"
+  }
+]
