@@ -168,6 +168,33 @@ const getNiftyFootballRegularPackGenerator = (network) => {
     });
 };
 
+/**
+ * @return {address, deploymentBlock}
+ */
+const getNiftyFootballAdmin = (network) => {
+    return networkSplitter(network, {
+        mainnet: {
+            address: '0x20B1bc618F79D9977b7Cce3F0523128178ea6a7b',
+            deploymentBlock: 7719606
+        },
+        ropsten: {
+            address: '0xf9A29482c1Ea2DE777a9786B836DD79c35dd6102',
+            deploymentBlock: 5556126
+        },
+        rinkeby: {
+            address: '0x0',
+            deploymentBlock: 0
+        },
+        local: {
+            address: '',
+            deploymentBlock: 0
+        }
+    });
+};
+
+
+
+
 module.exports = {
     getNetwork,
     networkSplitter,
@@ -177,4 +204,5 @@ module.exports = {
     getNiftyFootballNft,
     getNiftyFootballRegularPackGenerator,
     getNiftyFootballElitePackGenerator,
+    getNiftyFootballAdmin,
 };

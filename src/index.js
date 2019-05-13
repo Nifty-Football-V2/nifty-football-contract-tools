@@ -5,6 +5,7 @@ const NiftyFootballTradingCardBlindPack = require('./abi/NiftyFootballTradingCar
 const NiftyFootballTradingCardEliteBlindPack = require('./abi/NiftyFootballTradingCardEliteBlindPack');
 const NiftyFootballTradingCardGenerator = require('./abi/NiftyFootballTradingCardGenerator');
 const NiftyFootballTradingCardEliteGenerator = require('./abi/NiftyFootballTradingCardEliteGenerator');
+const NiftyFootballAdmin = require('./abi/NiftyFootballAdmin');
 
 module.exports = {
     abi: {
@@ -13,6 +14,7 @@ module.exports = {
         NiftyFootballTradingCardEliteBlindPackAbi: NiftyFootballTradingCardEliteBlindPack,
         NiftyFootballTradingCardGeneratorAbi: NiftyFootballTradingCardGenerator,
         NiftyFootballTradingCardEliteGeneratorAbi: NiftyFootballTradingCardEliteGenerator,
+        NiftyFootballAdminAbi: NiftyFootballAdmin,
     },
     contracts,
     getContractForNetworkAndAddress: require('./access/lookup')
