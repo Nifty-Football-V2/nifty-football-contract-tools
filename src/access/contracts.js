@@ -1,9 +1,9 @@
-const NiftyFootballTradingCardAbi = require('./abi/NiftyFootballTradingCard');
-const NiftyFootballTradingCardBlindPackAbi = require('./abi/NiftyFootballTradingCardBlindPack');
-const NiftyFootballTradingCardEliteBlindPackAbi = require('./abi/NiftyFootballTradingCardEliteBlindPack');
-const NiftyFootballTradingCardGeneratorAbi = require('./abi/NiftyFootballTradingCardGenerator');
-const NiftyFootballTradingCardEliteGeneratorAbi = require('./abi/NiftyFootballTradingCardEliteGenerator');
-const NiftyFootballAdminAbi = require('./abi/NiftyFootballAdmin');
+const NiftyFootballTradingCardAbi = require('../abi/NiftyFootballTradingCard');
+const NiftyFootballTradingCardBlindPackAbi = require('../abi/NiftyFootballTradingCardBlindPack');
+const NiftyFootballTradingCardEliteBlindPackAbi = require('../abi/NiftyFootballTradingCardEliteBlindPack');
+const NiftyFootballTradingCardGeneratorAbi = require('../abi/NiftyFootballTradingCardGenerator');
+const NiftyFootballTradingCardEliteGeneratorAbi = require('../abi/NiftyFootballTradingCardEliteGenerator');
+const NiftyFootballAdminAbi = require('../abi/NiftyFootballAdmin');
 
 const networkSplitter = (network, {ropsten, rinkeby, mainnet, local}) => {
     switch (network) {
