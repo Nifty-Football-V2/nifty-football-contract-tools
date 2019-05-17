@@ -3,6 +3,7 @@ const contracts = require('../access/contracts');
 const NiftyFootballTradingCard = require('../abi/NiftyFootballTradingCard');
 const NiftyFootballTradingCardBlindPack = require('../abi/NiftyFootballTradingCardBlindPack');
 const NiftyFootballTradingCardEliteBlindPack = require('../abi/NiftyFootballTradingCardEliteBlindPack');
+const NiftyFootballAdmin = require('../abi/NiftyFootballAdmin');
 
 /**
  * For a given address and network, return the required contract info for it
@@ -38,6 +39,15 @@ module.exports = function getContractForNetworkAndAddress(network, address) {
         return {
             abi: NiftyFootballTradingCardEliteBlindPack,
             deploymentBlock: contracts.getNiftyFootballEliteBlindPack(network).deploymentBlock,
+            network: contracts.getNetwork(network),
+            address,
+        };
+    }
+
+    if (contracts.getNiftyFootballAdmin(network).address === address) {
+        return {
+            abi: NiftyFootballAdmin,
+            deploymentBlock: contracts.getNiftyFootballAdmin(network).deploymentBlock,
             network: contracts.getNetwork(network),
             address,
         };

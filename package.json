@@ -1,6 +1,6 @@
 {
   "name": "nifty-football-contract-tools",
-  "version": "1.6.0",
+  "version": "1.8.1",
   "description": "james.morgan@blockrocket.tech",
   "main": "src/index.js",
   "scripts": {
